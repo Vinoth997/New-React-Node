@@ -4,7 +4,7 @@ function App() {
   const [data, setData] = useState([]);
 
   useEffect(() => {
-    fetch('http://localhost:3001/api/1')
+    fetch('http://52.249.252.41/api')
       .then(res => res.json())
       .then(data => setData(data));
   }, []);
